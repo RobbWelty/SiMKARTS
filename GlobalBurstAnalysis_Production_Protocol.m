@@ -258,7 +258,7 @@ for n=1:size(dwellsinburststore,1)
     hold on;
     stairs(x/10,cumsum(y2)./sum(y+y2),'k','LineWidth',2)
     title(strcat('Condition',num2str(n),'CDF'));  
-    legend('Dwells in busrt','Dwells out of burst','Location','southeast')
+    legend('Dwells in burst','Dwells out of burst','Location','southeast')
     xlabel('Time (frames)') 
     ylabel('Count')
     h=gcf;
@@ -314,10 +314,10 @@ function [archive_burst_RS,archive_burst_length,archive_burst_start]=burst(tn,li
 %
 %OUTPUT : archive_burst_RS - "rank surprise" values for each burst detected
 %         archive_burst_length - burst length for each burst detected (in spikes)
-%         archive_burst_start – Spike number of burst start for each burst detected
+%         archive_burst_start Â– Spike number of burst start for each burst detected
 %
 % Base code provided in Supplementary Information associated with 
-% Gourévitch, B. & Eggermont, J. J. A nonparametric approach for detection of bursts in spike trains. 
+% GourÃ©vitch, B. & Eggermont, J. J. A nonparametric approach for detection of bursts in spike trains. 
 % J. Neurosci. Meth. 160, 349-358 (2007). 
 % Minor changes made by MRB 2015 to adapt for appication to SiM-KARTS data
 %% Checking input
