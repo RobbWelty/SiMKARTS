@@ -7,6 +7,9 @@
 %the same winodws from those traces and thus return the same fano factor
 %values for each time window.
 %
+%% Robb Welty, 05/2021
+%  I altered the script to take .dat files that contain a single column in
+%  csv format.
 %% Mario Blanco, 06/2015
 % Put the path files (5 column data with time/donor/acceptor/FRET/ideal) into a folder called ideal (Ln 23) 
 % Example: C:\Users\mrblanc\Dropbox\ArlieCluster (1)\For_Clustering\100uMQ\ideal 
